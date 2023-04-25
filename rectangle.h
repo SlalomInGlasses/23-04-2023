@@ -22,8 +22,8 @@ public:
     ~Rectangle();
     bool IsCorrect();
     const std::string& TakeName();
-    double TakeSquare();
-    double TakeCircuit();
+    double RSquare();
+    double RCirtuit();
     bool ChangeAB(double a, double b);
 
     std::string ToString();

@@ -10,7 +10,7 @@ int main() {
     std::cout<<"Lab3\n";
 
     Rectangle p1;
-    Rectangle p2("koc",1.4,2.2);
+  /*  Rectangle p2("koc",1.4,2.2);
     Rectangle p3("pulapka",-2,-3);
 
     std::cout.precision(2);
@@ -21,10 +21,10 @@ int main() {
     p3.ChangeAB(2,3);
     std::cout<<"\n"<<p3.ToString()<<"\n";
 
-    std::cout<<"Nazwa: "<<p2.TakeName()<<"\n"
-             <<"Poprawny: "<<p2.IsCorrect()<<"\n"
-             <<"Obwod: "<<p2.TakeCircuit()<<"\n"
-             <<"Pole: "<<p2.TakeSquare()<<"\n";
+    std::cout<<"Nazwa: "<<p2.TakeName()<<"\n"*/
+        //     <<"Poprawny: "<<p2.IsCorrect()<<"\n";
+           //  <<"Obwod: "<<p2.TakeCircuit()<<"\n"
+            // <<"Pole: "<<p2.TakeSquare()<<"\n";
 
 
     return 0;

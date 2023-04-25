@@ -6,19 +6,19 @@
 #include <iostream>
 #include <string>
 
-bool Rectangle::IsCorrect(double a, double b) {
-    if (a < 0 || b < 0) return false;
+bool Rectangle::IsCorrect(double a1, double b1) {
+    if (a1 < 0 || b1 < 0) return false;
 
     return true;
 }
 
 void Rectangle::CalCircuit() {
-    std::cout << "Obwod to: " << 2 * (bok1 + bok2);
+    std::cout << "Obwod to: " << 2 * (a + b);
 
 }
 
 void Rectangle::CalSquare() {
-    std::cout << "Pole to: " << bok1 * bok2;
+    std::cout << "Pole to: " << a * b;
 
 }
 
@@ -51,15 +51,15 @@ const std::string &Rectangle::TakeName() {
     return name;
 }
 
-double Rectangle::CalSquare() {
+double Rectangle::RSquare() {
     return square;
 }
 
-double Rectangle::CalCircuit() {
+double Rectangle::RCirtuit() {
     return circuit;
 }
 
-bool Rectangle::ChangeAB(double a, double b) {
+bool Rectangle::ChangeAB(double a1, double b1) {
     if (IsCorrect(a, b)) {
         correct = true;
         a = a1;
