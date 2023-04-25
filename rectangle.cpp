@@ -71,12 +71,47 @@ bool Rectangle::ChangeAB(double a1, double b1) {
     return false;
 }
 
+int bef(double a){
+    int counter =0;
+   std:: cout<<"\na="<<a;
+    while(a>1){
+        a=a/10;
+        a++;
+    }
+    return counter;
+}
+
+int aft(double a){
+    int counter =0;
+    while(a!=int(a)){
+        a=a*10;
+        counter++;
+    }
+    return counter;
+
+}
+
+std::string bto_string(double a,int n){
+  std::string result=std::to_string(a);
+  result.resize(n);
+  return result;
+
+}
+
 std::string Rectangle::ToString() {
     std::string result = "";
 
-    result = "Prostokat o nazwie: " + name + " bok1="
-            + std::to_string(a) + " bok2=" + std::to_string(b);
-    if(correct) result +=" obowd to: "+ std::to_string(circuit)+" pole to: "+
+  int n=2+bef(a)+aft(a);
+ std::cout<<"bef"<<bef(a);
+  int n2=1+bef(b)+aft(b);
+
+
+
+
+    result = "\n===========================\nProstokat o nazwie: " + name + " bok1="
+           + bto_string(a,n) + " bok2=" + bto_string(b,n2);
+           // + temp + " bok2=" + std::to_string(b);
+    if(correct) result +="   obowd to: "+ std::to_string(circuit)+"   pole to: "+
                          std::to_string(square);
     else result +=" Figura niepoprawna";
     return result;

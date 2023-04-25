@@ -2,8 +2,8 @@
 // Created by student on 23.04.2023.
 //
 
-#ifndef UNTITLED_RECTANGLE_H
-#define UNTITLED_RECTANGLE_H
+#ifndef RECTANGLE_H
+#define RECTANGLE_H
 
 #include<string>
 
